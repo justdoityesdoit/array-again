@@ -1,0 +1,58 @@
+let fruits = ['apple', 'banana', 'orange'];
+
+
+
+console.log(fruits[0]); // Output: 'apple'
+console.log(fruits[1]); // Output: 'banana'
+console.log(fruits[2]); // Output: 'orange'
+
+
+
+fruits[0] = 'pear';
+console.log(fruits); // Output: ['pear', 'banana', 'orange']
+
+
+
+fruits.push('grape');
+console.log(fruits); // Output: ['pear', 'banana', 'orange', 'grape']
+
+
+
+fruits.pop();
+console.log(fruits); // Output: ['pear', 'banana', 'orange']
+
+
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+
+
+fruits.forEach(function(fruit) {
+  console.log(fruit);
+});
+
+
+
+let numbers = [1, 2, 3, 4, 5];
+let doubledNumbers = numbers.map(function(number) {
+  return number * 2;
+});
+console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+
+
+
+let evenNumbers = numbers.filter(function(number) {
+  return number % 2 === 0;
+});
+console.log(evenNumbers); // Output: [2, 4]
+
+
+
+let vegetables = ['carrot', 'broccoli'];
+let fruitsAndVegetables = fruits.concat(vegetables);
+console.log(fruitsAndVegetables); // Output: ['pear', 'banana', 'orange', 'carrot', 'broccoli']
+
+
+
